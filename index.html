@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+<head>
+
+<title>무제 문서</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Noto+Sans+KR:100,300,400,500,700,900|VT323&display=swap&subset=korean" rel="stylesheet">
+	<style type="text/css">
+		body{font-family: 'Noto Sans KR', sans-serif; font-weight:100; font-size:1vw; overflow:hidden;}
+		p{margin:0px;}
+		input[type=text] {
+			float:right;
+  			width: 90%;
+  			padding: 1% 1%;
+  			margin: 0px;
+			margin-bottom: 10%;
+  			box-sizing: border-box;
+  			border: none;
+  			border-bottom: 2px solid black;
+			font-family: 'VT323', monospace;
+			font-size: 1.1em;
+		}
+		label {
+			float:right;
+			text-align:right;
+  			width: 30%;
+			box-sizing: border-box;
+  			padding: 12px 12px 12px 0;
+  			display: inline-block;
+		}
+		
+       .wrap{position: absolute; top: 0px; left: 0px; width: 100%; height: 100vh; overflow: hidden;}
+		
+       .one{position: relative; top: 0px; left: 0px; width: 100%; height: 10vh; border-bottom: 0.5px solid black; box-sizing: border-box; background: linear-gradient( to left, black, white, white);}
+		
+		.one-1{width:12.5%; height:100%; float:left; padding:0.5% 0.5% 0.5% 2.5%; box-sizing: border-box; color:red;}
+		.one-2{width:75%; height:100%; float:left;  padding:0.5%; box-sizing: border-box; }
+		
+		  .titleN{font-size:1.3em;}
+		  #logo{height:100%; color:red;}		
+			
+       .two{position: relative; top: 0px; left: 0px; width: 100%; height: 90vh;}
+		
+		.two-1{width:12.5%; height:100%; background: linear-gradient( to bottom, black, white, white, black); float:left; box-sizing: border-box; border: 0.5px solid black;}
+		
+		 #tape{width:100%;}
+		
+		.two-2{width:12.5%; height:100%; float:left; box-sizing: border-box; border: 0.5px solid black;}
+		
+		 .two-2-1{width:100%; height:65%;}
+	
+		  .two-2-1-1{width:5%; height:100%; background-color:black; float:left; box-sizing: border-box; border: 0.5px solid black;}
+		  .two-2-1-2{width:90%; height:100%; float:left; box-sizing: border-box; border: 0.5px solid black;}
+		
+			.two-2-1-2-1{width:100%; height:55%; box-sizing: border-box; border: 0.5px solid black;}
+			.two-2-1-2-2{width:100%; height:15%; box-sizing: border-box; border: 0.5px solid black; vertical-align:middle;}
+			.two-2-1-2-3{width:100%; height:15%; box-sizing: border-box; border: 0.5px solid black;}
+			.two-2-1-2-4{width:100%; height:15%; box-sizing: border-box; border: 0.5px solid black;}
+		
+			 .two-2-1-2-1-1{width:100%; height:20%}
+			 .two-2-1-2-1-2{width:100%; height:40%}
+			 .two-2-1-2-1-3{width:100%; height:40%}
+		
+			 .pds{width:70%; font-family: 'VT323', monospace; font-size:6em; letter-spacing: -0.03em; text-align: left; float:left; margin-top:-9%}
+			 .heaven{width:30%; font-family: 'VT323', monospace; font-size:2em; letter-spacing: -0.03em; text-align: right; float:left;}
+			 .fname{width:100%; font-family: 'VT323', monospace; font-size:1.3em; padding:0px; padding-bottom:40%; }
+			 .billTitle{font-family: 'VT323', monospace; font-size:1.3em; text-align:center; margin-top:3%;}
+			 #blackforS{width:12vh; height:12vh; border-radius:50%; margin: 0 auto; box-sizing: border-box; border: 2px solid black;}
+			 #ynameA{width:100%;font-family: 'Libre Barcode 128 Text', cursive; font-size:2.3em; text-align:center; margin-top:10%;
+			    display:inline-block; 
+			    -webkit-transform:scale(1,2); /* Safari and Chrome */ 
+			    -moz-transform:scale(1,2); /* Firefox */ 
+			    -ms-transform:scale(1,2); /* IE 9 */ 
+			    -o-transform:scale(1,2); /* Opera */ 
+			    transform:scale(1,2); /* W3C */ 
+			} 
+		 .two-2-2{width:100%; height:35%; box-sizing: border-box;}
+		
+			.ul li a span:nth-child(1) {background-color: #fff; color: #333;}
+			.ul li a span:nth-child(2) {background-color: #333; color: #fff;}
+			.ul li a:hover span:nth-child(2) {display: none;}
+		
+		  .two-2-2-1{width:100%; height:66.66666%; box-sizing: border-box; border: 0.5px solid black;}
+		  .two-2-2-2{width:100%; height:33.33333%; box-sizing: border-box; border: 0.5px solid black; background-color:black; color:white;}
+		
+			.print{font-family: 'VT323', monospace; font-size:6em; letter-spacing: -0.03em; text-align: center; margin-top:-5%}
+		
+		.two-3{width:75%; height:100%; float:left;}
+		
+		 .two-3-1{width:66.66666%; height:50%; float:left; background: linear-gradient( to bottom, black, white, white); box-sizing: border-box; border: 0.5px solid black; padding:1%}
+		 .two-3-2{width:33.33333%; height:50%; float:left; box-sizing: border-box; border: 0.5px solid black;}
+		 .two-3-3{width:33.33333%; height:50%; float:left; box-sizing: border-box; border: 0.5px solid black; padding:1%;}
+		 .two-3-4{width:33.33333%; height:50%; float:left; background: linear-gradient( to right, white, white, black); box-sizing: border-box; border: 0.5px solid black; padding:1%; text-align:center; vertical-align: middle}
+		 .two-3-5{width:16.66665%; height:50%; float:left; background: linear-gradient( to right, black, white); box-sizing: border-box; border: 0.5px solid black;}
+		 .two-3-6{width:16.66665%; height:50%; float:left; background-color:black; box-sizing: border-box; border: 0.5px solid black; color:white; font-weight:900; text-align: center; font-size:2em; }
+		
+		  .two-3-1-1{width:7%; height:100%; float:left; box-sizing: border-box;}
+		  .two-3-1-2{width:86%; height:100%; float:left; box-sizing: border-box; padding:3%}
+		  .two-3-2-1{width:100%; height:100%; text-align:center;}
+		  .two-3-4-1{width:95%; height:100%;}
+		
+		    .frame{width:100%; height:100%; float:left; border: 1px solid black; box-sizing: border-box; text-align:center;}
+			.qm{width:100%; height:100%;}
+			.bonvoyage{transform:rotate(270deg); transform-origin: center 15.3rem; font-size:3em; font-weight:900;}
+			.subtitle{font-size:1.7em; font-weight:200;}
+			.verticalMiddle{line-height:1100%; vertical-align: middle;}
+			.marbleD{height:100%; margin: auto; animation: rotation 60s infinite linear running; animation-fill-mode:both}
+			.qtest{height:100%; margin: 0 auto;}
+				@keyframes rotation {
+				　from {
+                    transform:rotate(0deg);}
+                  to {
+                    transform:rotate(360deg);}
+				}
+			.marbleD:hover{animation-direction:reverse;}
+			#stic1 {width:200px; height:150px; position: absolute; padding-top:50px; top:150px; left:920px; background-image:url("pic/stic1.png"); background-size:contain;}
+		/*loadingpage*/	
+		.loading{
+    	width:100%;
+    	height:100%;
+    	position:fixed;
+    	left:0px;
+    	top:0px;
+    	background:#fff;
+		background-image:url("img/ptaLoad.gif");
+		background-size:20%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-origin: border-box;
+    	z-index:1000;
+		}
+
+		
+		/*inputrangestyle*/	
+		article {
+    		width: 150px;
+    		margin: 30px auto;
+		}
+		input[type=range] {
+    		width: 100%;
+			margin-bottom: 2%;
+		}
+		.customizing input[type=range] {
+    		-webkit-appearance: none;
+		}
+		.customizing  input[type=range]:focus {
+    		outline: none;
+		}
+		
+		.customizing input[type=range]::-webkit-slider-runnable-track {
+   		 	width: 100%;
+   		 	height: 1px;
+    	 	cursor: pointer;
+    	 	animate: 0.2s;
+    	 	background: black;
+		}
+		
+		.customizing input[type=range]::-webkit-slider-thumb {
+    	 	border: 1px solid black;
+     	 	height: 10px;
+     	 	width: 10px;
+    	 	background: black;
+		 	border-radius:50%;
+    	 	cursor: pointer;
+    	 	-webkit-appearance: none;
+    	 	margin-top: -5px;
+		}
+		
+		.customizing input[type=range]:focus::-webkit-slider-runnable-track {
+    	 background: black;
+		}
+		
+		input[type=color] {
+    		width: 100%;
+			margin-bottom: 2%;
+		}
+
+		.tooltip {
+  			position: relative;
+  			display: inline-block;
+		}
+
+		.tooltip .tooltiptext {
+  			visibility: hidden;
+  			background-color: black;
+  			color: #fff;
+  			text-align: center;
+  			border-radius: 6px;
+  			padding: 1%;
+			font-size:1.5em;
+			font-weight:500;
+			box-sizing:border-box;
+			border: 7px ridge dimgray;
+
+		}
+
+		.tooltip:hover .tooltiptext {
+  			visibility: visible;
+		}
+		::-moz-selection { /* Code for Firefox */
+		  color: white;
+		  background: black;
+		}
+
+		::selection {
+		  color: white;
+		  background: black;
+		}
+
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js">
+		</script>
+		<!--<script type="text/javascript" src="/js/common.js"></script>-->
+		<script type="text/javascript" src="jquery.simplyscroll.js"></script>
+		<link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
+		<script type="text/javascript">
+				(function($) {
+						$(function() {
+								$(".scroller").simplyScroll({
+										customClass:'vert',
+										orientation:'vertical',
+										auto: true,
+										manualMode: 'loop',
+										speed: 1			
+									});
+							});
+					})(jQuery);
+		</script>
+	        <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            /*
+            conditions
+             - jquery obj for input
+             - data type(AP: alphabet, N: number, HA: hangul, AN: alphanumeric)
+             - event type (click, keydown, keypress, keyup(*default) ...)
+             - handler binded event type (*optional)
+             - max length( *optional)
+
+            */
+            function addInputHandler(conditions){
+                var $input = conditions.input;
+                var dataType = conditions.dataType;
+                var eventType = conditions.eventType;
+                if ((!$input) || (!dataType)) {
+                    throw {error:"NotEnoughArguments", errorMsg:"required argument is missing " +((!$input)?" target input element":" dataType")}
+                    return;
+                }
+                if ($input[0].tagName != "INPUT") {
+                    throw {error:"IlregalTargetElement", errorMsg:"target element is not input"};
+                    return;
+                }
+                if ((!eventType)) {
+                    eventType = "keyup";
+                }
+                var handlerFunc = conditions.handler;
+                if ((!handlerFunc)) {
+                    handlerFunc = function(event){
+                        $("#divKeyCode").empty().html("<span> event key code = "+event.keyCode+"</span>");
+                        var regEx = null;
+                        if (dataType == "N") {
+                            regEx = /[^0-9]/gi;
+                        } else if (dataType == "AP") {
+                            regEx = /[^a-z]/gi;
+                        }else if (dataType == "AN") {
+                            regEx = /[^a-z0-9]/gi;
+                        }else if (dataType == "HA") {
+                            regEx = /[a-z0-9]/gi;
+
+                        }else{
+                            throw {error:"IlregalDataType", errorMsg:"dataType("+dataType+") is incorrect"}     
+                        }
+                        remainOnlyTargetValue(regEx, $input,event);
+                        //return true;
+                    };  // end of handlerFunc
+                } // end of if to check handlerFunc
+                $input.on(eventType,handlerFunc);
+
+                if (conditions.maxlength) {
+                    $input.attr("maxlength",conditions.maxlength);
+                }
+
+            }
+            function remainOnlyTargetValue(regEx, $input,event) {
+                if ((!(event.keyCode >=34 && event.keyCode<=40)) && event.keyCode != 16) {
+                    var inputVal = $input.val();
+                    if (regEx.test(inputVal)) {
+                        $input.val(inputVal.replace(regEx,''));    
+                    }
+                }
+            }
+
+            $(document).ready(function(){
+
+                try {
+                    addInputHandler({input:$("#age"),dataType:"N",maxlength:7});
+                    addInputHandler({input:$("#yname"),dataType:"AP"});
+                    addInputHandler({input:$("#state"),dataType:"AN"});
+                    addInputHandler({input:$("#hangul"),dataType:"HA"});
+                } catch(e) {
+                    console.log(e);
+                }
+            });
+        </script>
+</head>
+
+<body>
+	<div id="stic1"></div>
+	<div class="wrap">
+	<div class="loading"></div>
+		<div class="one">
+			<div class="one-1"><img src="img/logo.png" id="logo"></div>
+			<div class="one-2">
+				<p class="titleN">파라다이스 트래블 에이전시</p>
+				<p class="titleN">Paradise Travel Agency</p>
+			</div>
+		</div>
+			<div class="two">
+				<div class="two-1">
+					<ul class="scroller">
+					    <li><img src="img/tape.png" id="tape"></li>
+					</ul>
+				</div>
+				<div class="two-2">
+					<div class="two-2-1">
+						<div class="two-2-1-1"></div>
+						<div class="two-2-1-2">
+							<div class="two-2-1-2-1">
+								<div class="two-2-1-2-1-1">
+									<p class="billTitle">PUT YOUR<br>MARBLE STICKER</p>
+								</div>
+								<div class="two-2-1-2-1-2">
+									<div id="blackforS"></div>
+								</div>
+								<div class="two-2-1-2-1-3">
+									<form style="width:100%; height:100%;">
+										<div style="width:20%; height:100%; float:left;">
+  										<label class="fname">NAME:</label>
+										<label class="fname">AGE:</label>
+										<label class="fname">STATE:</label> </div>
+										<div style="width:75%; height:100%; float:left;">
+											<input type="text" id="yname" oninput="myFunction()">							
+  											<input type="text" id="age" >
+  											<input type="text" id="state" ></div>
+										</form>
+
+								</div>
+							</div>
+							<div class="two-2-1-2-2"><p id="ynameA"></p></div>
+							<div class="two-2-1-2-3"></div>
+							<div class="two-2-1-2-4">
+								<p class="pds">PDS</p>
+								<p class="heaven">7/24</p>
+							</div>
+						</div>
+						<div class="two-2-1-1"></div>
+						</div>
+					<div class="two-2-2">
+						<div class="two-2-2-1"></div>
+						<div class="two-2-2-2"><p class="print">PRINT</p></div>
+					</div>				
+				</div>
+				<div class="two-3">
+					<div class="two-3-1">
+						<div class="two-3-1-1">
+							<ul class="scroller">
+					    		<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+							</ul>
+						</div>
+						<div class="two-3-1-2">
+							<p class="subtitle">예약 없이, 당신만의 파라다이스 오션으로.<br>지금 바로 출발해보세요!</p>
+							<form method="get" action="page2.html" style="width:100%;" class="customizing" target="_blank">
+
+			<table style="width:100%; float:left; padding-top:5%;">
+                <tr>
+                    <td>좋아하는 물빛:</td>
+                    <td><input type="color" name="badaColor" value="#001e0f"></td>
+                </tr>
+                <tr>
+                    <td>좋아하는 햇빛:</td>
+                    <td><input type="color" name="haeColor" value="#ffffff"></td>
+                </tr>
+                <tr>
+                    <td>좋아하는 시간대:</td>
+                    <td><input type="range" name="favTime" size="10" min="0" max="100" style="margin-bottom:7%"></td>
+					
+                </tr>
+					
+            </table>
+
+            <table>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+						</div>
+						<div class="two-3-1-1">
+							<ul class="scroller">
+					    		<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+								<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+							 	<li class="bonvoyage" style="width:900%; margin-top:500%">BON VOYAGE!</li>
+							</ul>
+						</div>
+					</div>
+					<div class="two-3-2">
+ 						<div class="two-3-2-1 tooltip">
+    						<img src="img/questionMark2.png" class="qm" id="qma">
+    						<span class="tooltiptext">Paradise Travel Agency는..</span>
+						</div>          
+					</div>
+					<div class="two-3-3"> <div class="frame">
+							<img src="img/qtest1.png" class="qtest">
+						</div></div>
+					<div class="two-3-4">
+						<div class="two-3-4-1">
+						<a href="" onclick="myFunction()">
+							<img src="img/ranMarble2.png" class="marbleD"  onclick="myFunction()">
+							</a>
+						</div>
+					</div>
+					<div class="two-3-5" style="padding-top:10%">
+						<p style="font-size:1.2em; font-weight:700; line-height:2em; text-align:center;">TICKET에<br>붙일 수 있는<br>구슬을 드려요!</p>
+					</div>
+					<div class="two-3-6"> <a href="review.html"><div class="verticalMiddle"><font style="color:white;text-decoration: none">REVIEW</font></div></a></div>
+				</div>
+			</div>		
+	</div>
+	
+	<script>
+    $(window).load(function(){
+        $(".loading").fadeOut();
+    });
+</script>
+	<script>
+		function myFunction() {
+  			var q = document.getElementById("yname").value;
+			document.getElementById("ynameA").innerHTML = q;
+			}		
+	</script>
+	
+	<script type="text/javascript">
+		
+	var stic = document.getElementById("stic1");
+	stic.style.visibility="hidden";
+
+    qma.onclick = function(){
+    stic.style.visibility="visible";
+	
+    var backArr = [ "rrrr.png", "stic1.png", "smoke.png"];
+    var backNum = 0;
+
+    for(var i=0; i<8; i++){
+    var t= document.getElementById("stic1");
+    var k = t.cloneNode(true);
+    backNum = randomBH(0, backArr.length);
+    console.log(backNum);
+    var backText = "url('img/" + backArr[backNum] + "')";
+    console.log(backText);
+    
+    k.style.background = backText;
+    k.style.backgroundSize = "cover";
+
+    var b = randomBH(0,360);
+    k.style.left = randomBH(0,1300)+"px";
+    k.style.top =  randomBH(0,1700)+"px";
+    var r = b + "deg";
+	k.style.transform = "rotate(" + r + ")";
+
+
+    var time = Math.random();
+    k.style.animationDuration = time + "s";
+
+    document.body.appendChild(k);
+    }
+
+    function randomBH(min,max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min));}
+    }
+
+	</script>
+	<script>
+function myFunction() {
+  window.open("marble.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=440,height=420");
+}
+</script>
+
+
+</body>
+</html>
